@@ -19,165 +19,178 @@
     <title>Simulação 01</title>
 </head>
 
-    <Container>
-        
-        <Row>
-            <Col>
-                <p>Tempo em minutos</p>
-                <Input />
-                <Button>Calcular</Button>
-            </Col>
-        </Row>
+<body>
 
-        <Row>
-            <Col>
-                <table>
+    <div class="container">
+
+        <div class="title">
+            <p>Tempo em minutos</p>
+            <Input />
+            <Button>Calcular</Button>
+        </div>
+
+
+
+        <div>
+            <table class="table cenario">
+                <thead>
                     <tr>
-                        <th></th>
-                        <th>Cenário</th>
+                        <th scope="col"></th>
+                        <th scope="col">Cenário</th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"></th>
+                        <th>A</th>
+                        <th>B</th>
+                        <th>C</th>
                     </tr>
                     <tr>
+                        <td scope="row">Chegadas</td>
+                        <td>$value</td>
+                        <td>$value</td>
+                        <td>$value</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Serviços</td>
+                        <td>$value</td>
+                        <td>$value</td>
+                        <td>$value</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+
+        <div>
+            <table class="table cenario">
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col">Cenário</th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"></th>
                         <th></th>
                         <th>A</th>
                         <th>B</th>
                         <th>C</th>
                     </tr>
                     <tr>
+                        <td scope="row">λ</td>
                         <td>Chegadas</td>
                         <td>$value</td>
                         <td>$value</td>
                         <td>$value</td>
-                        <td>(min/carro)</td>
                     </tr>
                     <tr>
+                        <td scope="row">µ</td>
                         <td>Serviços</td>
                         <td>$value</td>
                         <td>$value</td>
                         <td>$value</td>
-                        <td>(min/carro)</td>
                     </tr>
-                </table>
-            </Col>
-        </Row>
+                </tbody>
+            </table>
+        </div>
 
-        <Row>
-            <Col>
-                <table>
-                    <tr>
-                        <th></th>
-                        <th></th>
-                        <th>Cenário</th>
-                    </tr>
-                    <tr>
-                        <th></th>
-                        <th></th>
-                        <th>A</th>
-                        <th>B</th>
-                        <th>C</th>
-                    </tr>
-                    <tr>
-                        <td>λ</td>
-                        <td>Chegadas</td>
-                        <td>$value</td>
-                        <td>$value</td>
-                        <td>$value</td>
-                        <td>(carros/hora)</td>
-                    </tr>
-                    <tr>
-                        <td>µ</td>
-                        <td>Serviços</td>
-                        <td>$value</td>
-                        <td>$value</td>
-                        <td>$value</td>
-                        <td>(carros/hora)</td>
-                    </tr>
-                </table>
-            </Col>
-        </Row>
 
-        <Row>
-            <Col>
-                <table>
-                    <tr>
-                        <td>Número Médio de Carros no Sistema (L)</td>
-                        <td>$value</td>
-                        <td>$value</td>
-                        <td>$value</td>
-                    </tr>
-                    <tr>
-                        <td>Tempo Médio Despendido no Sistema (W)</td>
-                        <td>$value</td>
-                        <td>$value</td>
-                        <td>$value</td>
-                    </tr>
-                    <tr>
-                        <td>Taxa Média de Ocupação do Servidor (p)</td>
-                        <td>$value</td>
-                        <td>$value</td>
-                        <td>$value</td>
-                    </tr>
-                </table>
-            </Col>
-        </Row>
 
-        <Row>
-            <Col>
-                <table>
+        <div>
+            <table class="table cenario">
+                <tbody>
                     <tr>
-                        <th></th>
-                        <th></th>
-                        <th>Cenário</th>
+                        <td scope="row">Número Médio de Carros no Sistema (L)</td>
+                        <td>$value</td>
+                        <td>$value</td>
+                        <td>$value</td>
                     </tr>
                     <tr>
-                        <th>n</th>
+                        <td scope="row">Tempo Médio Despendido no Sistema (W)</td>
+                        <td>$value</td>
+                        <td>$value</td>
+                        <td>$value</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Taxa Média de Ocupação do Servidor (p)</td>
+                        <td>$value</td>
+                        <td>$value</td>
+                        <td>$value</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+
+        <div>
+            <table class="table cenario">
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col">Cenário</th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">n</th>
                         <th>P(x)</th>
                         <th>A</th>
                         <th>B</th>
                         <th>C</th>
                     </tr>
                     <tr>
-                        <td>0</td>
+                        <td scope="row">0</td>
                         <td>P(0)</td>
                         <td>$valueA</td>
                         <td>$valueB</td>
                         <td>$valueC</td>
                     </tr>
                     <tr>
-                        <td>1</td>
+                        <td scope="row">1</td>
                         <td>P(1)</td>
                         <td>$valueA</td>
                         <td>$valueB</td>
                         <td>$valueC</td>
                     </tr>
                     <tr>
-                        <td>2</td>
+                        <td scope="row">2</td>
                         <td>P(2)</td>
                         <td>$valueA</td>
                         <td>$valueB</td>
                         <td>$valueC</td>
                     </tr>
                     <tr>
-                        <td>3</td>
+                        <td scope="row">3</td>
                         <td>P(3)</td>
                         <td>$valueA</td>
                         <td>$valueB</td>
                         <td>$valueC</td>
                     </tr>
                     <tr>
-                        <td>>=4</td>
+                        <td scope="row">>=4</td>
                         <td>P(x>=4)</td>
                         <td>$valueA</td>
                         <td>$valueB</td>
                         <td>$valueC</td>
                     </tr>
-                </table>
-            </Col>
-        </Row>
+                </tbody>
+            </table>
+        </div>
 
-    </Container>
-
-<body>
-
+    </div>
 
     <script src="js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
