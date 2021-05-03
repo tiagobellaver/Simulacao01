@@ -10,6 +10,7 @@
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
@@ -22,40 +23,121 @@
 <body>
 
     <div class="container-fluid">
-       <div class="row">
-        
-        <div class="dados-iniciais">
+        <div class="row">
 
-            <div class="time-section">
-                <h4 class="title">Tempo de Execução:</h4>
-                <input />
-            </div>
-            
-            <div class="arrive-section">
-                <h4 class="title">Chegadas</h4>
-                <p class="title">A:</p><input />
-                <p class="title">B:</p><input />
-                <p class="title">C:</p><input />
-            </div>
-            
-            <div class="service-section">
-                <h4 class="title">Serviços</h4>
-                <p class="title">A:</p><input />
-                <p class="title">B:</p><input />
-                <p class="title">C:</p><input />
-            </div>
+            <div class="dados-iniciais">
 
-            <button>Simular</button>
+                <div class="arrive-section">
+                    <h4 class="title">Chegadas</h4>
+                    <p class="title">A:</p><input type="number" id="arriveA" value="0" />
+                    <p class="title">B:</p><input type="number" id="arriveB" value="0" />
+                    <p class="title">C:</p><input type="number" id="arriveC" value="0" />
+                </div>
+
+                <div class="service-section">
+                    <h4 class="title">Serviços</h4>
+                    <p class="title">A:</p><input type="number" id="serviceA" value="0" />
+                    <p class="title">B:</p><input type="number" id="serviceB" value="0" />
+                    <p class="title">C:</p><input type="number" id="serviceC" value="0" />
+                </div>
+
+                <div class="time-section">
+                    <h4 class="title">Tempo de Execução:</h4>
+                    <input type="number" id="time" value="0" />
+                    <h4 class="title" style="margin-left:15px">Número de carros:</h4>
+                    <input type="number" id="cars" value="0" />
+                </div>
+
+            </div>
 
         </div>
 
-       </div>
-
-       <div class="row">
-            <div>
-                
+        <div class="row">
+            <div class="cenario">
+                <table>
+                    <thead>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>Cenário</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>A</td>
+                            <td>B</td>
+                            <td>C</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Chegadas</td>
+                            <td><input type="number" id="resultadoA" disabled></td>
+                            <td><input type="number" id="resultadoB" disabled></td>
+                            <td><input type="number" id="resultadoC" disabled></td>
+                        </tr>
+                        <tr>
+                            <td>Serviços</td>
+                            <td><input type="number" id="resultadoAA" disabled></td>
+                            <td><input type="number" id="resultadoBB" disabled></td>
+                            <td><input type="number" id="resultadoCC" disabled></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-       </div>
+        </div>
+
+        <div class="row">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Número Médio de Carros no Sistema (L)</td>
+                        <td><input type="number" id="LA" disabled></td>
+                        <td><input type="number" id="LB" disabled></td>
+                        <td><input type="number" id="LC" disabled></td>
+                    </tr>
+                    <tr>
+                        <td>Tempo Médio Despendido no Sistema (W)</td>
+                        <td><input type="number" id="WA" disabled></td>
+                        <td><input type="number" id="WB" disabled></td>
+                        <td><input type="number" id="WC" disabled></td>
+                    </tr>
+                    <tr>
+                        <td>Taxa Média de Ocupação do Servidor (p)</td>
+                        <td><input type="number" id="pA" disabled></td>
+                        <td><input type="number" id="pB" disabled></td>
+                        <td><input type="number" id="pC" disabled></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="row">
+            <table id="cenario">
+                <thead>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>Cenario</td>
+                    </tr>
+                    <tr>
+                        <td>n</td>
+                        <td>P(x)</td>
+                        <td>A</td>
+                        <td>B</td>
+                        <td>C</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0</td>
+                        <td>P(0)</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+    
+        </div>
 
     </div>
 
