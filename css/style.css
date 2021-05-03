@@ -40,6 +40,7 @@
     margin-right: 15px;
 }
 
+
 .dados-iniciais button {
     background-color: white;
     border: 1px solid black;
@@ -54,12 +55,37 @@
     display: flex;
     align-items: baseline;
     margin-top: 20px;
-    margin-left: 20px;
 }
 
-.dados {
+.cenario table {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.cenario input {
+    text-align: center;
+}
+
+
+.cenario-final {
     display: flex;
     align-items: baseline;
     margin-top: 20px;
-    margin-left: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cenario-final table .first-n, .second-p {
+    width: 50px;
+    border: 1px solid black;
+}
+
+.cenario-final table .first-value, .second-value, .third-value {
+    width: 150px;
+    border: 1px solid black;
+}
+
+.cenario-final table td {
+    border: 1px solid black;
 }

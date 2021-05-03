@@ -24,6 +24,7 @@
 
     <div class="container-fluid">
         <div class="row">
+            <!--Dados Iniciais-->
 
             <div class="dados-iniciais">
 
@@ -53,10 +54,12 @@
         </div>
 
         <div class="row">
+            <!--Cenário calculado-->
             <div class="cenario">
                 <table>
                     <thead>
                         <tr>
+                            <td>&nbsp;</td>
                             <td>&nbsp;</td>
                             <td>Cenário</td>
                         </tr>
@@ -86,57 +89,64 @@
         </div>
 
         <div class="row">
-            <table>
-                <tbody>
-                    <tr>
-                        <td>Número Médio de Carros no Sistema (L)</td>
-                        <td><input type="number" id="LA" disabled></td>
-                        <td><input type="number" id="LB" disabled></td>
-                        <td><input type="number" id="LC" disabled></td>
-                    </tr>
-                    <tr>
-                        <td>Tempo Médio Despendido no Sistema (W)</td>
-                        <td><input type="number" id="WA" disabled></td>
-                        <td><input type="number" id="WB" disabled></td>
-                        <td><input type="number" id="WC" disabled></td>
-                    </tr>
-                    <tr>
-                        <td>Taxa Média de Ocupação do Servidor (p)</td>
-                        <td><input type="number" id="pA" disabled></td>
-                        <td><input type="number" id="pB" disabled></td>
-                        <td><input type="number" id="pC" disabled></td>
-                    </tr>
-                </tbody>
-            </table>
+            <!--Tabela 1-->
+            <div class="cenario">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Número Médio de Carros no Sistema (L)</td>
+                            <td><input type="number" id="LA" disabled></td>
+                            <td><input type="number" id="LB" disabled></td>
+                            <td><input type="number" id="LC" disabled></td>
+                        </tr>
+                        <tr>
+                            <td>Tempo Médio Despendido no Sistema (W)</td>
+                            <td><input type="number" id="WA" disabled></td>
+                            <td><input type="number" id="WB" disabled></td>
+                            <td><input type="number" id="WC" disabled></td>
+                        </tr>
+                        <tr>
+                            <td>Taxa Média de Ocupação do Servidor (p)</td>
+                            <td><input type="number" id="pA" disabled></td>
+                            <td><input type="number" id="pB" disabled></td>
+                            <td><input type="number" id="pC" disabled></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
 
         <div class="row">
-            <table id="cenario">
-                <thead>
-                    <tr>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>Cenario</td>
-                    </tr>
-                    <tr>
-                        <td>n</td>
-                        <td>P(x)</td>
-                        <td>A</td>
-                        <td>B</td>
-                        <td>C</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>0</td>
-                        <td>P(0)</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                    </tr>
-                </tbody>
-            </table>
-    
+            <!--tabela final-->
+            <div class="cenario-final">
+                <table id="cenario">
+                    <thead>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>Cenario</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="first-n">n</td>
+                            <td class="second-p">P(x)</td>
+                            <td class="first-value">A</td>
+                            <td class="second-value">B</td>
+                            <td class="third-value">C</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0</td>
+                            <td>P(0)</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
 
     </div>
